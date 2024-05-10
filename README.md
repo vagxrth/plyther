@@ -24,3 +24,7 @@ An Ethereum-based platform for seamless and secure cryptocurrency transactions. 
 
 ## Video
 
+
+
+https://github.com/vagxrth/plyther/assets/83217083/4f681f8b-2ac6-47a8-8880-459a812cdd26
+
