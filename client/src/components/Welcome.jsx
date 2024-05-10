@@ -24,11 +24,11 @@ const Welcome = () => {
     const { connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction, isLoading } = useContext(TransactionContext);
 
     const handleSubmit = (e) => {
-        const { addressTo, amount, keyword, message } = formData;
+        const { addressTo, amount,  message } = formData;
 
         e.preventDefault();
 
-        if (!addressTo || !amount || !keyword || !message) return;
+        if (!addressTo || !amount || !message) return;
 
         sendTransaction();
     }
@@ -37,10 +37,10 @@ const Welcome = () => {
             <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
                 <div className='flex flex-1 justify-start flex-col mf:mr-10'>
                     <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
-                        Send Crypto <br /> Across The World
+                        Send crypto <br /> across the world
                     </h1>
                     <p className='text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base'>
-                        Explore The Crypto World. Buy & Sell Cryptocurrencies 
+                        Explore The Crypto World. <br /> Buy & Sell Cryptocurrencies 
                     </p>
                     {!currentAccount && 
                         (<button type='button' onClick={ connectWallet } className='flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full !cursor-pointer hover:bg-[#2546bd]'>
@@ -56,16 +56,16 @@ const Welcome = () => {
                             Security
                         </div>
                         <div className={`rounded-tr-2xl ${commonStyles}`}>
-                            Ethereum
+                            Accessibility
                         </div>
                         <div className={`rounded-bl-2xl ${commonStyles}`}>
-                            Web 3.0
+                            Efficiency
                         </div>
                         <div className={commonStyles}>
-                            Low Fees
+                            Innovative
                         </div>
                         <div className={`rounded-br-2xl ${commonStyles}`}>
-                            Blockchain
+                            Transparency
                         </div>
                     </div>
                 </div>
@@ -91,9 +91,8 @@ const Welcome = () => {
                     </div>
 
                     <div className='p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism'>
-                        <Input placeholder="Address To" name = "addressTo" type="text" handleChange={handleChange}/>
+                        <Input placeholder="Receiver's Address" name = "addressTo" type="text" handleChange={handleChange}/>
                         <Input placeholder="Amount" name = "amount" type="number" handleChange={handleChange}/>
-                        <Input placeholder="Keyword" name = "keyword" type="text" handleChange={handleChange}/>
                         <Input placeholder="Message" name = "message" type="text" handleChange={handleChange}/>
 
                         <div className='h-[1px] w-full bg-gray-400 my-2'/>
