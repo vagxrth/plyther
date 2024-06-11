@@ -7,9 +7,6 @@ An Ethereum-based platform for seamless and secure cryptocurrency transactions. 
  
 
 ## Tech Stack
-- HTML
-- CSS
-- JavaScript
 - React
 - TailwindCSS
 - Vite
